@@ -17,6 +17,9 @@ def academic():
 def portfolio():
     return render_template('portfolio.html')
 
+# ... 上面的路由代码保持不变 ...
+
+# 只要确保上面有 app = Flask(__name__) 即可
+# 下面这段是为了兼容本地测试和 Vercel 部署
 if __name__ == '__main__':
-    # debug=True 可以在你修改代码后自动重启服务器，非常适合开发阶段
     app.run(debug=True)
